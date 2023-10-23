@@ -14,17 +14,14 @@ class BaseDeDatos {
   constructor() {
     // Array para el catálogo
     this.productos = [];
-    // Empezar a cargar productos
-    this.agregarRegistro(1, "BeYourBest", 40, "Buzos", "byb-frente.jpg");
-    this.agregarRegistro(2, "Mars", 35, "Buzos", "mars-frente.jpg");
-    this.agregarRegistro(3, "Mercury", 40, "Buzos", "mercury-frente.jpg");
-    this.agregarRegistro(4, "Solar", 35, "Buzos", "solar-blanco-frente.jpg");
-}
-  
-// array productos
-  agregarRegistro(id, nombre, precio, categoria, imagen) {
-    const producto = new Producto(id, nombre, precio, categoria, imagen);
-    this.productos.push(producto);
+    this.cargarRegistros();
+  }
+
+async cargarRegistros(){
+  const resultado = await fetch('/prods.json');
+  this.productos = await resultado.json();
+  console.log(this.productos);
+  cargarProductos(this.productos);
 }
   
 // devuelve prod

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "BeYourBest",
+        "precio": 40,
+        "categoria": "Buzos",
+        "imagen": "byb-frente.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Mars",
+        "precio": 35,
+        "categoria": "Buzos",
+        "imagen": "mars-frente.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Mercury",
+        "precio": 40,
+        "categoria": "Buzos",
+        "imagen": "mercury-frente.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Solar",
+        "precio": 35,
+        "categoria": "Buzos",
+        "imagen": "solar-blanco-frente.jpg"
+    }
+]
